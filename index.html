@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 18px;
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+}
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.section {
+    margin-top: 20px;
+}
+.project-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 16px;
+    background: #fafafa;
+    margin-top: 12px;
+}
+.highlight {
+    background: #f5f7ff;
+    border-left: 4px solid #4a66f0;
+    padding-left: 12px;
+}
+.experience-item {
+    margin-bottom: 16px;
+    padding-left: 12px;
+    border-left: 2px solid #eee;
+}
+.small {
+    color: #666;
+    font-size: 13px;
+}
+.meta {
+    color: #444;
+    font-size: 14px;
+}
+</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Fan Lu（卢帆） | Ph.D. Candidate, USTC</title>
+<meta content="Fan Lu（卢帆） is a Ph.D. candidate at the University of Science and Technology of China. His research experience includes embodied intelligence, multimodal learning, and out-of-distribution detection, and he currently focuses on VLA foundation models for embodied intelligence." name="description"/>
+<meta content="Fan Lu" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://lufan31.github.io/" rel="canonical"/>
+<meta content="Fan Lu（卢帆） | Ph.D. Candidate, USTC" property="og:title"/>
+<meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection." property="og:description"/>
+<meta content="profile" property="og:type"/>
+<meta content="https://lufan31.github.io/" property="og:url"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Fan Lu（卢帆） | Ph.D. Candidate, USTC" name="twitter:title"/>
+<meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection." name="twitter:description"/>
+<style>
+    :root {
+      --text: #202124;
+      --muted: #5f6368;
+      --link: #1a73e8;
+      --border: #dadce0;
+      --soft: #f8fafd;
+      --tag: #eef3fd;
+      --max-width: 920px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 42px 24px 56px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 34px;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 2px 0;
+      font-size: 17px;
+    }
+    .links {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      align-items: center;
+    }
+    .links a,
+    .links span {
+      white-space: nowrap;
+    }
+    .metrics {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    nav {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    section {
+      padding: 28px 0 4px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0 0 16px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 4px;
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .project-highlight {
+      border: 1px solid var(--border);
+      background: var(--soft);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 8px;
+    }
+    .project-highlight .role {
+      color: var(--muted);
+      margin: 4px 0 10px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .tag {
+      background: var(--tag);
+      color: #315783;
+      padding: 3px 9px;
+      border-radius: 16px;
+      font-size: 13px;
+    }
+    .publication {
+      margin: 0 0 22px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #eef0f2;
+    }
+    .publication:last-child {
+      border-bottom: 0;
+    }
+    .publication-title {
+      font-weight: 500;
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+    .authors {
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .authors strong {
+      font-weight: 600;
+    }
+    .venue {
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .paper-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      margin: 5px 0 7px;
+      font-size: 15px;
+    }
+    .summary {
+      color: #3c4043;
+      margin-top: 4px;
+    }
+    .year-heading {
+      font-size: 17px;
+      margin: 22px 0 10px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .compact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .compact-list li {
+      margin-bottom: 12px;
+    }
+    .experience-item {
+      margin: 0 0 20px;
+    }
+    .experience-title {
+      font-weight: 500;
+      font-size: 17px;
+    }
+    .experience-meta {
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 680px) {
+      .page {
+        padding: 28px 18px 44px;
+      }
+      h1 {
+        font-size: 29px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  
+.contact-lines { margin-top: 12px; }
+.contact-lines .links { margin-top: 4px; }
+.compact-list li strong:first-child { display: inline; }
+</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://lufan31.github.io/#profile",
+  "url": "https://lufan31.github.io/",
+  "name": "Fan Lu（卢帆）",
+  "description": "Personal academic homepage of Fan Lu, a Ph.D. candidate at the University of Science and Technology of China.",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://lufan31.github.io/#fan-lu",
+    "name": "Fan Lu",
+    "alternateName": "卢帆",
+    "email": [
+      "mailto:lufan@mail.ustc.edu.cn",
+      "mailto:lufanzwj@gmail.com"
+    ],
+    "jobTitle": "Ph.D. Candidate",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Science and Technology of China",
+      "sameAs": "https://www.ustc.edu.cn/"
+    },
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Robbyant（蚂蚁灵波科技）"
+      },
+      {
+        "@type": "Organization",
+        "name": "Ant Research"
+      }
+    ],
+    "knowsAbout": [
+      "Embodied Intelligence",
+      "Vision-Language-Action Models",
+      "Multimodal Learning",
+      "Large-scale Pretraining",
+      "Out-of-Distribution Detection",
+      "Deep Learning"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=ILpxpfwAAAAJ&hl=zh-CN",
+      "https://github.com/LuFan31"
+    ]
+  },
+  "hasPart": [
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "A Pragmatic VLA Foundation Model",
+      "datePublished": "2026",
+      "url": "https://github.com/robbyant/lingbot-vla",
+      "author": {
+        "@id": "https://lufan31.github.io/#fan-lu"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning",
+      "datePublished": "2025",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html",
+      "author": {
+        "@id": "https://lufan31.github.io/#fan-lu"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection",
+      "datePublished": "2023",
+      "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html",
+      "author": {
+        "@id": "https://lufan31.github.io/#fan-lu"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection",
+      "datePublished": "2023",
+      "url": "https://arxiv.org/abs/2312.01732",
+      "author": {
+        "@id": "https://lufan31.github.io/#fan-lu"
+      }
+    }
+  ]
+}</script>
+</head>
+<body><div class="container">
+<div class="page">
+<header>
+<div>
+<h1>
+<b>Fan Lu</b>（卢帆）</h1>
+<p class="subtitle">Ph.D. Candidate</p>
+<p class="subtitle">University of Science and Technology of China</p>
+<div class="contact-lines"><div class="links">Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>   WeChat: luDZ310711</div><div class="links"><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a>   <a href="https://github.com/LuFan31">GitHub</a></div></div>
+</div>
+<nav aria-label="Page navigation">
+<a href="#about">About</a>
+<a href="#current">Current Experience &amp; Interests</a>
+<a href="#project">Highlighted Project</a>
+<a href="#featured-publications">Featured Publications</a>
+<a href="#selected-publications">Selected Publications</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section id="about">
+<h2>About</h2>
+<p>I am a Ph.D. candidate at the University of Science and Technology of China, expected to graduate in June 2027. My research experience includes embodied intelligence, multimodal learning, and out-of-distribution detection. I am currently focusing on vision-language-action (VLA) foundation models for embodied intelligence.</p>
+<p>My current work involves large-scale VLA models for real-world robotic manipulation, including model architecture construction, training infrastructure, systematic ablations, and large-scale pretraining.</p>
+</section>
+<section id="current"><h2>Current Experience &amp; Research Interests</h2><p><strong>2025.08 – Present:</strong> Applied Research Intern, Embodied AI, Robbyant（蚂蚁灵波科技）. Deeply involved in LingBot-VLA, focusing on model architecture construction, systematic ablations, scalable training infrastructure, and large-scale pretraining.</p><p><strong>2023.09 – 2025.08:</strong> Research Intern, Ant Research. Worked on multimodal learning and deep learning research.</p><p>My broader research interests include embodied intelligence, multimodal learning, and large-scale pretraining.</p><div aria-label="Research interests" class="tags"><span class="tag">Embodied Intelligence</span>
+<span class="tag">VLA Foundation Models</span>
+<span class="tag">Multimodal Learning</span>
+<span class="tag">Large-scale Pretraining</span>
+</div></section>
+<section id="project">
+<h2>Highlighted Project</h2>
+<article class="project-highlight">
+<h3>LingBot-VLA: A Pragmatic VLA Foundation Model</h3>
+<p class="role">Co-first author; leading student contributor.</p>
+<p>LingBot-VLA is a large-scale vision-language-action foundation model for real-world robotic manipulation. I contributed as a co-first author and leading student contributor, focusing on model architecture construction, systematic ablations, codebase infrastructure design, and large-scale pretraining.</p>
+<p><a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></p>
+</article>
+</section>
+<section id="featured-publications">
+<h2>Featured Publications</h2>
+<article class="publication">
+<div class="publication-title">A Pragmatic VLA Foundation Model</div>
+<div class="authors">Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.</div>
+<div class="venue">arXiv preprint arXiv:2601.18692, 2026</div>
+<div class="muted">*Equal contribution. <strong>Fan Lu</strong> is a student first author.</div>
+<div class="paper-links"><a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></div>
+<p class="summary">A large-scale vision-language-action foundation model for real-world robotic manipulation.</p>
+</article>
+<article class="publication">
+<div class="publication-title">Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning</div>
+<div class="authors"><strong>Fan Lu</strong>, Wei Wu, Kecheng Zheng, Shuailei Ma, Biao Gong, Jiawei Liu, Wei Zhai, Yang Cao, Yujun Shen, Zheng-Jun Zha</div>
+<div class="venue">CVPR, 2025</div>
+<div class="paper-links">
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html">Paper</a>
+<a href="https://github.com/LuFan31/CompreCap">Code</a>
+<a href="https://huggingface.co/datasets/FanLu31/CompreCap">Dataset</a>
+</div>
+<p class="summary">A benchmark for evaluating comprehensive image captioning in large vision-language models using directed scene graphs.</p>
+</article>
+<article class="publication">
+<div class="publication-title">Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection</div>
+<div class="authors"><strong>Fan Lu</strong>, Kai Zhu, Wei Zhai, Kecheng Zheng, Yang Cao</div>
+<div class="venue">CVPR, 2023</div>
+<div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html">Paper</a>
+<a href="https://github.com/LuFan31/ET-OOD">Code</a></div>
+<p class="summary">An uncertainty-aware optimal transport framework for semantically coherent out-of-distribution detection.</p>
+</article>
+<article class="publication">
+<div class="publication-title">Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection</div>
+<div class="authors"><strong>Fan Lu</strong>, Kai Zhu, Kecheng Zheng, Wei Zhai, Yang Cao</div>
+<div class="venue">arXiv preprint arXiv:2312.01732, 2023</div>
+<div class="paper-links"><a href="https://arxiv.org/abs/2312.01732">Paper</a>
+<a href="https://github.com/LuFan31/LSA">Code</a></div>
+<p class="summary">A semantic alignment approach for full-spectrum out-of-distribution detection under both semantic and covariate shifts.</p>
+</article>
+</section>
+<section id="selected-publications">
+<h2>Selected Publications</h2>
+<div class="year-heading">2026</div>
+<ul class="compact-list"><li><strong>A Pragmatic VLA Foundation Model.</strong><br/>Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.. arXiv preprint arXiv:2601.18692, 2026. <a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></li><li><strong>Self-Consistent Latent Reasoning: Long Latent Sequence Reasoning for Vision-Language Model.</strong><br/>Chenfeng Wang, Wei He, Xuhan Zhu, Chunpeng Zhou, Qizhen Li, Song Yan, Yufei Zheng, Chengjun Yu, <strong>Fan Lu</strong>, Wei Zhai, et al.. arXiv preprint arXiv:2605.12163, 2026. </li><li><strong>Diffusion Guided Chain-of-Vision for Large Autoregressive Vision Models.</strong><br/>Xinyang Wang, Kecheng Zheng, Minfeng Zhu, Wei Wu, <strong>Fan Lu</strong>, Wei Zhai, Wei Chen. CVPR, 2026. </li></ul>
+<div class="year-heading">2025</div>
+<ul class="compact-list"><li><strong>Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning.</strong><br/><strong>Fan Lu</strong>, Wei Wu, Kecheng Zheng, Shuailei Ma, Biao Gong, Jiawei Liu, Wei Zhai, Yang Cao, Yujun Shen, Zheng-Jun Zha. CVPR, 2025. <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html">Paper</a> <a href="https://github.com/LuFan31/CompreCap">Code</a> <a href="https://huggingface.co/datasets/FanLu31/CompreCap">Dataset</a></li><li><strong>Learning Visual Generative Priors without Text.</strong><br/>Shuailei Ma, Kecheng Zheng, Ying Wei, Wei Wu, <strong>Fan Lu</strong>, Yifei Zhang, Chen-Wei Xie, Biao Gong, Jiapeng Zhu, Yujun Shen. CVPR, 2025. <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Ma_Learning_Visual_Generative_Priors_without_Text_CVPR_2025_paper.html">Paper</a></li><li><strong>Vision-Centric Activation and Coordination for Multimodal Large Language Models.</strong><br/>Yunnan Wang, <strong>Fan Lu</strong>, Kecheng Zheng, Ziyuan Huang, Ziqiang Li, Wenjun Zeng, Xin Jin. arXiv preprint arXiv:2510.14349, 2025. <a href="https://arxiv.org/abs/2510.14349">Paper</a></li></ul>
+<div class="year-heading">2024</div>
+<ul class="compact-list"><li><strong>LoTLIP: Improving Language-Image Pre-training for Long Text Understanding.</strong><br/>Wei Wu, Kecheng Zheng, Shuailei Ma, <strong>Fan Lu</strong>, Yuxin Guo, Yifei Zhang, Wei Chen, Qingpei Guo, Yujun Shen, Zheng-Jun Zha. NeurIPS, 2024. <a href="https://arxiv.org/abs/2410.05249">Paper</a></li><li><strong>DreamLIP: Language-Image Pre-training with Long Captions.</strong><br/>Kecheng Zheng, Yifei Zhang, Wei Wu, <strong>Fan Lu</strong>, Shuailei Ma, Xin Jin, Wei Chen, Yujun Shen. ECCV, 2024. </li></ul>
+<div class="year-heading">2023</div>
+<ul class="compact-list"><li><strong>Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection.</strong><br/><strong>Fan Lu</strong>, Kai Zhu, Wei Zhai, Kecheng Zheng, Yang Cao. CVPR, 2023. <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html">Paper</a> <a href="https://github.com/LuFan31/ET-OOD">Code</a></li><li><strong>Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection.</strong><br/><strong>Fan Lu</strong>, Kai Zhu, Kecheng Zheng, Wei Zhai, Yang Cao. arXiv preprint arXiv:2312.01732, 2023. <a href="https://arxiv.org/abs/2312.01732">Paper</a> <a href="https://github.com/LuFan31/LSA">Code</a></li></ul>
+</section>
+<section id="experience">
+<h2>Experience</h2>
+<div class="experience-item">
+<div class="experience-title">Robbyant（蚂蚁灵波科技）</div>
+<div class="experience-meta">Applied Research Intern, Embodied AI · 2025.08 – Present</div>
+<p>Working on LingBot-VLA, a large-scale vision-language-action foundation model for real-world robotic manipulation. My contributions include model architecture construction, systematic ablations, codebase infrastructure, and large-scale pretraining.</p>
+</div>
+<div class="experience-item">
+<div class="experience-title">Ant Research</div>
+<div class="experience-meta">Research Intern · 2023.09 – 2025.08</div>
+<p>Worked on multimodal learning and deep learning research.</p>
+</div>
+<div class="experience-item">
+<div class="experience-title">University of Science and Technology of China</div>
+<div class="experience-meta">Ph.D. Candidate · Expected Jun. 2027</div>
+</div>
+</section>
+<section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>    WeChat: luDZ310711</p><p><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a>    <a href="https://github.com/LuFan31">GitHub</a></p></section>
+</main>
+<footer>
+<p>© 2026 <b>Fan Lu</b>. Last updated: June 2026.</p>
+</footer>
+</div>
+</div></body>
+</html>
