@@ -65,17 +65,17 @@ a:hover {
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Fan Lu（卢帆） | Ph.D. Candidate, USTC</title>
-<meta content="Fan Lu（卢帆） is a Ph.D. candidate at the University of Science and Technology of China. His research experience includes embodied intelligence, multimodal learning, and out-of-distribution detection, and he currently focuses on VLA foundation models for embodied intelligence." name="description"/>
+<meta content="Fan Lu（卢帆） is a Ph.D. candidate at the University of Science and Technology of China. His research experience includes embodied intelligence, multimodal learning, and out-of-distribution detection; he currently focuses on VLA foundation models for embodied intelligence, including LingBot-VLA and LingBot-VLA 2.0." name="description"/>
 <meta content="Fan Lu" name="author"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://lufan31.github.io/" rel="canonical"/>
 <meta content="Fan Lu（卢帆） | Ph.D. Candidate, USTC" property="og:title"/>
-<meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection." property="og:description"/>
+<meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection, including LingBot-VLA and LingBot-VLA 2.0." property="og:description"/>
 <meta content="profile" property="og:type"/>
 <meta content="https://lufan31.github.io/" property="og:url"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Fan Lu（卢帆） | Ph.D. Candidate, USTC" name="twitter:title"/>
-<meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection." name="twitter:description"/>
+<meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection, including LingBot-VLA and LingBot-VLA 2.0." name="twitter:description"/>
 <style>
     :root {
       --text: #202124;
@@ -288,7 +288,7 @@ a:hover {
   "@id": "https://lufan31.github.io/#profile",
   "url": "https://lufan31.github.io/",
   "name": "Fan Lu（卢帆）",
-  "description": "Personal academic homepage of Fan Lu, a Ph.D. candidate at the University of Science and Technology of China.",
+  "description": "Personal academic homepage of Fan Lu, a Ph.D. candidate at the University of Science and Technology of China, focusing on embodied intelligence and VLA foundation models.",
   "mainEntity": {
     "@type": "Person",
     "@id": "https://lufan31.github.io/#fan-lu",
@@ -317,10 +317,10 @@ a:hover {
     "knowsAbout": [
       "Embodied Intelligence",
       "Vision-Language-Action Models",
+      "Mixture-of-Experts",
       "Multimodal Learning",
       "Large-scale Pretraining",
-      "Out-of-Distribution Detection",
-      "Deep Learning"
+      "Out-of-Distribution Detection"
     ],
     "sameAs": [
       "https://scholar.google.com/citations?user=ILpxpfwAAAAJ&hl=zh-CN",
@@ -328,6 +328,15 @@ a:hover {
     ]
   },
   "hasPart": [
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "From Foundation to Application: Improving VLA Models in Practice",
+      "datePublished": "2026",
+      "url": "https://arxiv.org/abs/2607.06403",
+      "author": {
+        "@id": "https://lufan31.github.io/#fan-lu"
+      }
+    },
     {
       "@type": "ScholarlyArticle",
       "headline": "A Pragmatic VLA Foundation Model",
@@ -375,12 +384,12 @@ a:hover {
 <b>Fan Lu</b>（卢帆）</h1>
 <p class="subtitle">Ph.D. Candidate</p>
 <p class="subtitle">University of Science and Technology of China</p>
-<div class="contact-lines"><div class="links">Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>   WeChat: luDZ310711</div><div class="links"><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a>   <a href="https://github.com/LuFan31">GitHub</a></div></div>
+<div class="contact-lines"><div class="links">Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>   WeChat: luDZ310711</div><div class="links"><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a> <a href="https://github.com/LuFan31">GitHub</a></div></div>
 </div>
 <nav aria-label="Page navigation">
 <a href="#about">About</a>
 <a href="#current">Current Experience &amp; Interests</a>
-<a href="#project">Highlighted Project</a>
+<a href="#project">Highlighted Projects</a>
 <a href="#featured-publications">Featured Publications</a>
 <a href="#selected-publications">Selected Publications</a>
 <a href="#experience">Experience</a>
@@ -391,15 +400,16 @@ a:hover {
 <section id="about">
 <h2>About</h2>
 <p>I am a Ph.D. candidate at the University of Science and Technology of China, expected to graduate in June 2027. My research experience includes embodied intelligence, multimodal learning, and out-of-distribution detection. I am currently focusing on vision-language-action (VLA) foundation models for embodied intelligence.</p>
-<p>My current work involves large-scale VLA models for real-world robotic manipulation, including model architecture construction, training infrastructure, systematic ablations, and large-scale pretraining.</p>
+<p>My current work involves large-scale VLA models for real-world robotic manipulation, including model architecture construction, training infrastructure, systematic ablations, large-scale pretraining, and MoE-based action expert design.</p>
 </section>
-<section id="current"><h2>Current Experience &amp; Research Interests</h2><p><strong>2025.08 – Present:</strong> Applied Research Intern, Embodied AI, Robbyant（蚂蚁灵波科技）. Deeply involved in LingBot-VLA, focusing on model architecture construction, systematic ablations, scalable training infrastructure, and large-scale pretraining.</p><p><strong>2023.09 – 2025.08:</strong> Research Intern, Ant Research. Worked on multimodal learning and deep learning research.</p><p>My broader research interests include embodied intelligence, multimodal learning, and large-scale pretraining.</p><div aria-label="Research interests" class="tags"><span class="tag">Embodied Intelligence</span>
+<section id="current"><h2>Current Experience &amp; Research Interests</h2><p><strong>2025.08 – Present:</strong> Applied Research Intern, Embodied AI, Robbyant（蚂蚁灵波科技）. Deeply involved in LingBot-VLA and LingBot-VLA 2.0, large-scale vision-language-action foundation models for real-world robotic manipulation.</p><p><strong>2023.09 – 2025.08:</strong> Research Intern, Ant Research. Worked on multimodal learning and deep learning research.</p><p>My broader research interests include embodied intelligence, multimodal learning, and large-scale pretraining.</p><div aria-label="Research interests" class="tags"><span class="tag">Embodied Intelligence</span>
 <span class="tag">VLA Foundation Models</span>
 <span class="tag">Multimodal Learning</span>
 <span class="tag">Large-scale Pretraining</span>
 </div></section>
 <section id="project">
-<h2>Highlighted Project</h2>
+<h2>Highlighted Projects</h2>
+<article class="project-highlight"><h3>LingBot-VLA 2.0: From Foundation to Application</h3><p class="role">Student first author.</p><p>LingBot-VLA 2.0 is a practical vision-language-action foundation model designed to move from large-scale pretraining toward reliable real-world robot applications. As a student first author, I focused on model architecture construction, codebase infrastructure design, and the implementation and optimization of an MoE-based action expert architecture.</p><p><a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a> <a href="https://arxiv.org/abs/2607.06403">Paper</a> <a href="https://github.com/robbyant/lingbot-vla-v2">Code</a></p></article>
 <article class="project-highlight">
 <h3>LingBot-VLA: A Pragmatic VLA Foundation Model</h3>
 <p class="role">Co-first author; leading student contributor.</p>
@@ -409,6 +419,9 @@ a:hover {
 </section>
 <section id="featured-publications">
 <h2>Featured Publications</h2>
+<article class="publication"><div class="publication-title">LingBot-VLA 2.0: From Foundation to Application — Improving VLA Models in Practice</div><div class="authors">Wei Wu, Fangjing Wang, <strong>Fan Lu</strong>, He Sun, Shi Liu, Yunnan Wang, Yibin Yan, Yong Wang, Shuailei Ma, et al.</div><div class="venue">arXiv preprint arXiv:2607.06403, 2026</div><div class="muted">Student first author.</div><div class="paper-links"><a href="https://arxiv.org/abs/2607.06403">Paper</a>
+<a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a>
+<a href="https://github.com/robbyant/lingbot-vla-v2">Code</a></div><p class="summary">A practical VLA foundation model for real-world robot applications, with expanded cross-embodiment capabilities and an MoE-based action expert.</p></article>
 <article class="publication">
 <div class="publication-title">A Pragmatic VLA Foundation Model</div>
 <div class="authors">Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.</div>
@@ -448,7 +461,7 @@ a:hover {
 <section id="selected-publications">
 <h2>Selected Publications</h2>
 <div class="year-heading">2026</div>
-<ul class="compact-list"><li><strong>A Pragmatic VLA Foundation Model.</strong><br/>Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.. arXiv preprint arXiv:2601.18692, 2026. <a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></li><li><strong>Self-Consistent Latent Reasoning: Long Latent Sequence Reasoning for Vision-Language Model.</strong><br/>Chenfeng Wang, Wei He, Xuhan Zhu, Chunpeng Zhou, Qizhen Li, Song Yan, Yufei Zheng, Chengjun Yu, <strong>Fan Lu</strong>, Wei Zhai, et al.. arXiv preprint arXiv:2605.12163, 2026. </li><li><strong>Diffusion Guided Chain-of-Vision for Large Autoregressive Vision Models.</strong><br/>Xinyang Wang, Kecheng Zheng, Minfeng Zhu, Wei Wu, <strong>Fan Lu</strong>, Wei Zhai, Wei Chen. CVPR, 2026. </li></ul>
+<ul class="compact-list"><li><strong>LingBot-VLA 2.0: From Foundation to Application — Improving VLA Models in Practice.</strong><br/>Wei Wu, Fangjing Wang, <strong>Fan Lu</strong>, He Sun, Shi Liu, Yunnan Wang, Yibin Yan, Yong Wang, Shuailei Ma, et al. arXiv preprint arXiv:2607.06403, 2026. <a href="https://arxiv.org/abs/2607.06403">Paper</a> <a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a> <a href="https://github.com/robbyant/lingbot-vla-v2">Code</a></li><li><strong>A Pragmatic VLA Foundation Model.</strong><br/>Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.. arXiv preprint arXiv:2601.18692, 2026. <a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></li><li><strong>Self-Consistent Latent Reasoning: Long Latent Sequence Reasoning for Vision-Language Model.</strong><br/>Chenfeng Wang, Wei He, Xuhan Zhu, Chunpeng Zhou, Qizhen Li, Song Yan, Yufei Zheng, Chengjun Yu, <strong>Fan Lu</strong>, Wei Zhai, et al.. arXiv preprint arXiv:2605.12163, 2026. </li><li><strong>Diffusion Guided Chain-of-Vision for Large Autoregressive Vision Models.</strong><br/>Xinyang Wang, Kecheng Zheng, Minfeng Zhu, Wei Wu, <strong>Fan Lu</strong>, Wei Zhai, Wei Chen. CVPR, 2026. </li></ul>
 <div class="year-heading">2025</div>
 <ul class="compact-list"><li><strong>Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning.</strong><br/><strong>Fan Lu</strong>, Wei Wu, Kecheng Zheng, Shuailei Ma, Biao Gong, Jiawei Liu, Wei Zhai, Yang Cao, Yujun Shen, Zheng-Jun Zha. CVPR, 2025. <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html">Paper</a> <a href="https://github.com/LuFan31/CompreCap">Code</a> <a href="https://huggingface.co/datasets/FanLu31/CompreCap">Dataset</a></li><li><strong>Learning Visual Generative Priors without Text.</strong><br/>Shuailei Ma, Kecheng Zheng, Ying Wei, Wei Wu, <strong>Fan Lu</strong>, Yifei Zhang, Chen-Wei Xie, Biao Gong, Jiapeng Zhu, Yujun Shen. CVPR, 2025. <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Ma_Learning_Visual_Generative_Priors_without_Text_CVPR_2025_paper.html">Paper</a></li><li><strong>Vision-Centric Activation and Coordination for Multimodal Large Language Models.</strong><br/>Yunnan Wang, <strong>Fan Lu</strong>, Kecheng Zheng, Ziyuan Huang, Ziqiang Li, Wenjun Zeng, Xin Jin. arXiv preprint arXiv:2510.14349, 2025. <a href="https://arxiv.org/abs/2510.14349">Paper</a></li></ul>
 <div class="year-heading">2024</div>
@@ -461,7 +474,7 @@ a:hover {
 <div class="experience-item">
 <div class="experience-title">Robbyant（蚂蚁灵波科技）</div>
 <div class="experience-meta">Applied Research Intern, Embodied AI · 2025.08 – Present</div>
-<p>Working on LingBot-VLA, a large-scale vision-language-action foundation model for real-world robotic manipulation. My contributions include model architecture construction, systematic ablations, codebase infrastructure, and large-scale pretraining.</p>
+<p>Working on LingBot-VLA and LingBot-VLA 2.0, large-scale vision-language-action foundation models for real-world robotic manipulation. My contributions include model architecture construction, codebase infrastructure design, large-scale pretraining, and the implementation and optimization of an MoE-based action expert architecture for LingBot-VLA 2.0.</p>
 </div>
 <div class="experience-item">
 <div class="experience-title">Ant Research</div>
@@ -473,10 +486,10 @@ a:hover {
 <div class="experience-meta">Ph.D. Candidate · Expected Jun. 2027</div>
 </div>
 </section>
-<section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>    WeChat: luDZ310711</p><p><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a>    <a href="https://github.com/LuFan31">GitHub</a></p></section>
+<section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>    WeChat: luDZ310711</p><p><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a> <a href="https://github.com/LuFan31">GitHub</a></p></section>
 </main>
 <footer>
-<p>© 2026 <b>Fan Lu</b>. Last updated: June 2026.</p>
+<p>© 2026 <b>Fan Lu</b>. Last updated: July 2026.</p>
 </footer>
 </div>
 </div></body>
