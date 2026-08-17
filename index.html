@@ -1,67 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background: #ffffff;
-    color: #111;
-    line-height: 1.6;
-    margin: 0;
-}
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 24px;
-}
-h1 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-h2 {
-    font-size: 18px;
-    margin-top: 40px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 6px;
-}
-a {
-    color: #1a0dab;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.section {
-    margin-top: 20px;
-}
-.project-card {
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 16px;
-    background: #fafafa;
-    margin-top: 12px;
-}
-.highlight {
-    background: #f5f7ff;
-    border-left: 4px solid #4a66f0;
-    padding-left: 12px;
-}
-.experience-item {
-    margin-bottom: 16px;
-    padding-left: 12px;
-    border-left: 2px solid #eee;
-}
-.small {
-    color: #666;
-    font-size: 13px;
-}
-.meta {
-    color: #444;
-    font-size: 14px;
-}
-</style>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Fan Lu（卢帆） | Ph.D. Candidate, USTC</title>
@@ -73,364 +12,1122 @@ a:hover {
 <meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection, including LingBot-VLA and LingBot-VLA 2.0." property="og:description"/>
 <meta content="profile" property="og:type"/>
 <meta content="https://lufan31.github.io/" property="og:url"/>
+<meta content="https://lufan31.github.io/assets/profile.jpg" property="og:image"/>
+<meta content="800" property="og:image:width"/>
+<meta content="800" property="og:image:height"/>
+<meta content="Fan Lu" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Fan Lu（卢帆） | Ph.D. Candidate, USTC" name="twitter:title"/>
 <meta content="Ph.D. candidate working on embodied intelligence, VLA foundation models, multimodal learning, and out-of-distribution detection, including LingBot-VLA and LingBot-VLA 2.0." name="twitter:description"/>
+<meta content="https://lufan31.github.io/assets/profile.jpg" name="twitter:image"/>
+<meta content="Fan Lu" name="twitter:image:alt"/>
 <style>
     :root {
-      --text: #202124;
-      --muted: #5f6368;
-      --link: #1a73e8;
-      --border: #dadce0;
-      --soft: #f8fafd;
-      --tag: #eef3fd;
-      --max-width: 920px;
+      --page-bg: #f6f7f9;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --surface-blue: #f4f8ff;
+      --text: #1f2937;
+      --heading: #101828;
+      --muted: #667085;
+      --faint: #98a2b3;
+      --line: #e4e7ec;
+      --line-strong: #d0d5dd;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --accent-soft: #eaf2ff;
+      --sidebar-width: 270px;
+      --content-width: 820px;
+      --radius: 14px;
+      --shadow: 0 14px 40px rgba(16, 24, 40, 0.055);
     }
+
     * {
       box-sizing: border-box;
     }
+
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 28px;
     }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      background: #ffffff;
-      line-height: 1.6;
-      font-size: 16px;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.055), transparent 32rem),
+        var(--page-bg);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      font-size: 15.5px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
+
     a {
-      color: var(--link);
+      color: var(--accent);
       text-decoration: none;
+      text-underline-offset: 3px;
     }
+
     a:hover {
+      color: var(--accent-dark);
       text-decoration: underline;
     }
-    .page {
-      max-width: var(--max-width);
+
+    strong,
+    b {
+      font-weight: 650;
+      color: var(--heading);
+    }
+
+    .site-shell {
+      width: min(100% - 40px, calc(var(--sidebar-width) + var(--content-width) + 64px));
       margin: 0 auto;
-      padding: 42px 24px 56px;
-    }
-    header {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border);
+      grid-template-columns: var(--sidebar-width) minmax(0, var(--content-width));
+      gap: 64px;
+      align-items: start;
+      padding: 44px 0 64px;
     }
-    h1 {
-      margin: 0 0 6px;
-      font-size: 34px;
-      line-height: 1.2;
+
+    .sidebar {
+      position: sticky;
+      top: 28px;
+      min-width: 0;
+    }
+
+    .profile-card {
+      padding: 26px 24px 24px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(208, 213, 221, 0.9);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .profile-name {
+      margin: 0;
+      color: var(--heading);
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      font-weight: 720;
+    }
+
+    .profile-cn {
+      margin-left: 4px;
+      font-size: 20px;
       font-weight: 500;
-    }
-    .subtitle {
       color: var(--muted);
-      margin: 2px 0;
-      font-size: 17px;
-    }
-    .links {
-      margin-top: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 14px;
-      align-items: center;
-    }
-    .links a,
-    .links span {
       white-space: nowrap;
     }
-    .metrics {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 15px;
+
+    .profile-role {
+      margin: 15px 0 2px;
+      color: var(--heading);
+      font-size: 16px;
+      font-weight: 620;
     }
-    nav {
-      margin-top: 8px;
+
+    .profile-affiliation {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .profile-divider {
+      height: 1px;
+      background: var(--line);
+      margin: 20px 0;
+    }
+
+    .contact-stack {
+      display: grid;
+      gap: 11px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-row {
+      min-width: 0;
+    }
+
+    .contact-label {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--faint);
+      font-size: 11px;
+      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .contact-row a {
+      overflow-wrap: anywhere;
+    }
+
+    .profile-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 18px;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .profile-links a,
+    .link-buttons a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 10px;
+      color: var(--accent-dark);
+      background: var(--accent-soft);
+      border: 1px solid #d6e5ff;
+      border-radius: 999px;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 620;
+      text-decoration: none;
+      transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease;
+    }
+
+    .profile-links a:hover,
+    .link-buttons a:hover {
+      background: #dfeaff;
+      border-color: #b7cffc;
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .side-nav {
+      margin-top: 22px;
+      padding: 10px 4px;
+    }
+
+    .side-nav a {
+      position: relative;
+      display: block;
+      padding: 7px 12px 7px 16px;
       color: var(--muted);
-      font-size: 15px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 530;
+      text-decoration: none;
+      transition: color 150ms ease, background-color 150ms ease;
     }
+
+    .side-nav a::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 50%;
+      width: 3px;
+      height: 0;
+      border-radius: 2px;
+      background: var(--accent);
+      transform: translateY(-50%);
+      transition: height 150ms ease;
+    }
+
+    .side-nav a:hover,
+    .side-nav a.active {
+      color: var(--accent-dark);
+      background: rgba(37, 99, 235, 0.065);
+      text-decoration: none;
+    }
+
+    .side-nav a.active::before {
+      height: 18px;
+    }
+
+    .main-column {
+      min-width: 0;
+    }
+
+    .content-panel {
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid rgba(208, 213, 221, 0.92);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .content-panel main {
+      padding: 10px 42px 16px;
+    }
+
     section {
-      padding: 28px 0 4px;
+      padding: 34px 0 30px;
+      border-bottom: 1px solid var(--line);
     }
+
+    section:last-of-type {
+      border-bottom: 0;
+    }
+
+    section[id] {
+      scroll-margin-top: 22px;
+    }
+
     h2 {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin: 0 0 20px;
+      color: var(--heading);
       font-size: 22px;
-      font-weight: 500;
-      margin: 0 0 16px;
-      padding-bottom: 7px;
-      border-bottom: 1px solid var(--border);
+      line-height: 1.3;
+      letter-spacing: -0.022em;
+      font-weight: 700;
     }
+
+    h2::before {
+      content: "";
+      width: 4px;
+      height: 23px;
+      border-radius: 999px;
+      background: var(--accent);
+      flex: 0 0 auto;
+    }
+
     h3 {
+      margin: 0;
+      color: var(--heading);
       font-size: 18px;
-      font-weight: 500;
-      margin: 0 0 4px;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      font-weight: 680;
     }
+
     p {
       margin: 0 0 14px;
     }
-    .muted {
-      color: var(--muted);
+
+    p:last-child {
+      margin-bottom: 0;
     }
-    .project-highlight {
-      border: 1px solid var(--border);
-      background: var(--soft);
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin-top: 8px;
+
+    .lead-copy {
+      color: #344054;
+      font-size: 16px;
+      line-height: 1.78;
     }
-    .project-highlight .role {
-      color: var(--muted);
-      margin: 4px 0 10px;
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 18px;
+      margin: 4px 0 20px;
     }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      bottom: 14px;
+      left: 5px;
+      width: 1px;
+      background: var(--line-strong);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 28px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 11px;
+      height: 11px;
+      border: 3px solid var(--surface);
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 1px #9dbcf8;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 720;
+      letter-spacing: 0.01em;
+    }
+
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 29px;
+      padding: 4px 10px;
+      color: #315d9b;
+      background: #edf4ff;
+      border: 1px solid #d7e6fd;
+      border-radius: 8px;
+      font-size: 12.5px;
+      line-height: 1.2;
+      font-weight: 620;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 15px;
+    }
+
+    .project-highlight {
+      position: relative;
+      padding: 21px 22px 18px;
+      background: linear-gradient(135deg, #f8fbff 0%, #ffffff 70%);
+      border: 1px solid #dbe7f8;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .project-highlight::after {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: var(--accent);
+    }
+
+    .project-highlight .role {
+      display: inline-flex;
+      align-items: center;
+      margin: 8px 0 12px;
+      padding: 3px 8px;
+      color: #475467;
+      background: #f2f4f7;
+      border-radius: 6px;
+      font-size: 12.5px;
+      line-height: 1.35;
+      font-weight: 620;
+    }
+
+    .project-highlight p {
+      color: #475467;
+    }
+
+    .project-highlight .link-buttons {
       margin-top: 12px;
     }
-    .tag {
-      background: var(--tag);
-      color: #315783;
-      padding: 3px 9px;
-      border-radius: 16px;
-      font-size: 13px;
+
+    .publication-list {
+      display: grid;
+      gap: 14px;
     }
+
     .publication {
-      margin: 0 0 22px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #eef0f2;
+      display: grid;
+      grid-template-columns: 132px minmax(0, 1fr);
+      gap: 18px;
+      padding: 19px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
     }
-    .publication:last-child {
-      border-bottom: 0;
+
+    .publication:hover {
+      border-color: #c7d7ee;
+      box-shadow: 0 10px 28px rgba(16, 24, 40, 0.06);
+      transform: translateY(-1px);
     }
+
+    .venue-badge {
+      align-self: start;
+      display: flex;
+      min-height: 62px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 7px;
+      color: var(--accent-dark);
+      background: var(--surface-blue);
+      border: 1px solid #dce8fb;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 11.5px;
+      line-height: 1.42;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
     .publication-title {
-      font-weight: 500;
-      font-size: 17px;
-      margin-bottom: 2px;
-    }
-    .authors {
-      color: var(--text);
-      margin-bottom: 2px;
-    }
-    .authors strong {
-      font-weight: 600;
-    }
-    .venue {
-      color: var(--muted);
       margin-bottom: 5px;
+      color: var(--heading);
+      font-size: 17px;
+      line-height: 1.45;
+      font-weight: 690;
     }
-    .paper-links {
+
+    .authors {
+      margin-bottom: 4px;
+      color: #344054;
+      font-size: 14.2px;
+      line-height: 1.58;
+    }
+
+    .authors strong {
+      font-weight: 720;
+    }
+
+    .venue {
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .muted {
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+
+    .paper-links,
+    .link-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 12px;
-      margin: 5px 0 7px;
-      font-size: 15px;
+      gap: 7px;
+      margin: 7px 0 9px;
     }
+
     .summary {
-      color: #3c4043;
-      margin-top: 4px;
+      margin: 0;
+      color: #475467;
+      font-size: 14.2px;
+      line-height: 1.62;
     }
+
+    .year-block + .year-block {
+      margin-top: 27px;
+    }
+
     .year-heading {
-      font-size: 17px;
-      margin: 22px 0 10px;
-      color: var(--muted);
-      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      color: var(--heading);
+      font-size: 16px;
+      font-weight: 720;
     }
+
+    .year-heading::after {
+      content: "";
+      height: 1px;
+      background: var(--line);
+      flex: 1;
+    }
+
     .compact-list {
+      display: grid;
+      gap: 10px;
       list-style: none;
       padding: 0;
       margin: 0;
     }
+
     .compact-list li {
-      margin-bottom: 12px;
-    }
-    .experience-item {
-      margin: 0 0 20px;
-    }
-    .experience-title {
-      font-weight: 500;
-      font-size: 17px;
-    }
-    .experience-meta {
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-    footer {
-      margin-top: 36px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
+      padding: 13px 15px;
+      background: var(--surface-soft);
+      border: 1px solid #edf0f3;
+      border-radius: 10px;
+      color: #475467;
       font-size: 14px;
+      line-height: 1.64;
     }
+
+    .compact-list li > strong:first-child {
+      display: inline-block;
+      margin-bottom: 2px;
+      color: var(--heading);
+      font-size: 14.5px;
+      line-height: 1.5;
+    }
+
+    .compact-list li a {
+      display: inline-block;
+      margin-left: 7px;
+      font-size: 13px;
+      font-weight: 620;
+    }
+
+    .experience-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: minmax(175px, 0.33fr) minmax(0, 1fr);
+      gap: 20px;
+      padding: 17px 18px;
+      background: var(--surface-soft);
+      border: 1px solid #e9edf2;
+      border-radius: 11px;
+    }
+
+    .experience-title {
+      color: var(--heading);
+      font-size: 15.5px;
+      font-weight: 690;
+    }
+
+    .experience-meta {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+
+    .experience-item p {
+      color: #475467;
+      font-size: 14.2px;
+      line-height: 1.66;
+    }
+
+    .contact-panel {
+      padding: 18px 19px;
+      background: var(--surface-soft);
+      border: 1px solid #e9edf2;
+      border-radius: 11px;
+    }
+
+    .contact-panel p + p {
+      margin-top: 9px;
+    }
+
+    footer {
+      padding: 21px 42px 24px;
+      color: var(--muted);
+      background: #fbfcfd;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .mobile-header {
+      display: none;
+    }
+
+    @media (max-width: 980px) {
+      .site-shell {
+        width: min(100% - 32px, 820px);
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 24px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .profile-card {
+        padding: 23px 24px;
+      }
+
+      .side-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 7px;
+        margin-top: 16px;
+        padding: 0;
+      }
+
+      .side-nav a {
+        padding: 6px 9px;
+        background: #f8fafc;
+        border: 1px solid #edf0f3;
+      }
+
+      .side-nav a::before {
+        display: none;
+      }
+
+      .content-panel main {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+    }
+
     @media (max-width: 680px) {
-      .page {
-        padding: 28px 18px 44px;
+      body {
+        font-size: 15px;
       }
-      h1 {
-        font-size: 29px;
+
+      .site-shell {
+        width: min(100% - 22px, 680px);
+        padding: 12px 0 28px;
       }
+
+      .profile-card,
+      .content-panel {
+        border-radius: 14px;
+      }
+
+      .profile-card {
+        padding: 21px 19px;
+      }
+
+      .profile-name {
+        font-size: 27px;
+      }
+
+      .profile-cn {
+        font-size: 18px;
+      }
+
+      .content-panel main {
+        padding: 4px 19px 10px;
+      }
+
+      section {
+        padding: 28px 0 25px;
+      }
+
       h2 {
         font-size: 20px;
       }
+
+      .publication {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+      }
+
+      .venue-badge {
+        min-height: auto;
+        width: fit-content;
+        padding: 5px 9px;
+      }
+
+      .experience-item {
+        grid-template-columns: 1fr;
+        gap: 9px;
+      }
+
+      footer {
+        padding: 18px 19px 21px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
     }
   
-.contact-lines { margin-top: 12px; }
-.contact-lines .links { margin-top: 4px; }
-.compact-list li strong:first-child { display: inline; }
-</style>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "@id": "https://lufan31.github.io/#profile",
-  "url": "https://lufan31.github.io/",
-  "name": "Fan Lu（卢帆）",
-  "description": "Personal academic homepage of Fan Lu, a Ph.D. candidate at the University of Science and Technology of China, focusing on embodied intelligence and VLA foundation models.",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://lufan31.github.io/#fan-lu",
-    "name": "Fan Lu",
-    "alternateName": "卢帆",
-    "email": [
-      "mailto:lufan@mail.ustc.edu.cn",
-      "mailto:lufanzwj@gmail.com"
-    ],
-    "jobTitle": "Ph.D. Candidate",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Science and Technology of China",
-      "sameAs": "https://www.ustc.edu.cn/"
-    },
-    "worksFor": [
-      {
-        "@type": "Organization",
-        "name": "Robbyant（蚂蚁灵波科技）"
-      },
-      {
-        "@type": "Organization",
-        "name": "Ant Research"
+
+    /* Profile image */
+    .profile-photo-frame {
+      position: relative;
+      width: 152px;
+      height: 152px;
+      margin: 0 auto 22px;
+      overflow: hidden;
+      border: 1px solid var(--line-strong);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #edf4ff, #f8fafc);
+      box-shadow: 0 10px 28px rgba(16, 24, 40, 0.09);
+    }
+
+    .profile-photo,
+    .profile-photo-fallback {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .profile-photo {
+      z-index: 1;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      background: #ffffff;
+    }
+
+    .profile-photo-fallback {
+      display: grid;
+      place-items: center;
+      color: var(--accent-dark);
+      font-size: 38px;
+      font-weight: 760;
+      letter-spacing: -0.04em;
+    }
+
+    /* Chronological image-led publication list */
+    #publications .year-block + .year-block {
+      margin-top: 32px;
+    }
+
+    #publications .publication-list {
+      display: grid;
+      gap: 0;
+    }
+
+    #publications .publication {
+      display: grid;
+      grid-template-columns: 232px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      padding: 20px 0 24px;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      box-shadow: none;
+      transform: none;
+    }
+
+    #publications .publication:first-child {
+      padding-top: 8px;
+    }
+
+    #publications .publication:last-child {
+      padding-bottom: 4px;
+      border-bottom: 0;
+    }
+
+    #publications .publication:hover {
+      border-color: var(--line);
+      box-shadow: none;
+      transform: none;
+    }
+
+    .publication-image {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      min-height: 144px;
+      padding: 8px;
+      overflow: hidden;
+      background: #ffffff;
+      border: 1px solid #e4e9f0;
+      border-radius: 10px;
+    }
+
+    .publication-image img {
+      display: block;
+      width: 100%;
+      height: 138px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .publication-body {
+      min-width: 0;
+      padding-top: 1px;
+    }
+
+    #publications .publication-title {
+      margin-bottom: 6px;
+      font-size: 17.2px;
+      line-height: 1.42;
+    }
+
+    #publications .authors {
+      margin-bottom: 5px;
+      line-height: 1.55;
+    }
+
+    #publications .venue {
+      margin-bottom: 6px;
+    }
+
+    #publications .paper-links {
+      margin: 8px 0 8px;
+    }
+
+    #publications .summary {
+      margin-top: 4px;
+    }
+
+    @media (max-width: 680px) {
+      .profile-photo-frame {
+        width: 138px;
+        height: 138px;
       }
-    ],
-    "knowsAbout": [
-      "Embodied Intelligence",
-      "Vision-Language-Action Models",
-      "Mixture-of-Experts",
-      "Multimodal Learning",
-      "Large-scale Pretraining",
-      "Out-of-Distribution Detection"
-    ],
-    "sameAs": [
-      "https://scholar.google.com/citations?user=ILpxpfwAAAAJ&hl=zh-CN",
-      "https://github.com/LuFan31"
-    ]
-  },
-  "hasPart": [
-    {
-      "@type": "ScholarlyArticle",
-      "headline": "From Foundation to Application: Improving VLA Models in Practice",
-      "datePublished": "2026",
-      "url": "https://arxiv.org/abs/2607.06403",
-      "author": {
-        "@id": "https://lufan31.github.io/#fan-lu"
+
+      #publications .publication {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 18px 0 22px;
       }
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "headline": "A Pragmatic VLA Foundation Model",
-      "datePublished": "2026",
-      "url": "https://github.com/robbyant/lingbot-vla",
-      "author": {
-        "@id": "https://lufan31.github.io/#fan-lu"
+
+      .publication-image {
+        width: min(100%, 430px);
+        min-height: 0;
+        padding: 9px;
       }
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "headline": "Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning",
-      "datePublished": "2025",
-      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html",
-      "author": {
-        "@id": "https://lufan31.github.io/#fan-lu"
-      }
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "headline": "Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection",
-      "datePublished": "2023",
-      "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html",
-      "author": {
-        "@id": "https://lufan31.github.io/#fan-lu"
-      }
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "headline": "Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection",
-      "datePublished": "2023",
-      "url": "https://arxiv.org/abs/2312.01732",
-      "author": {
-        "@id": "https://lufan31.github.io/#fan-lu"
+
+      .publication-image img {
+        height: auto;
+        max-height: 225px;
       }
     }
-  ]
-}</script>
+</style>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://lufan31.github.io/#profile",
+    "url": "https://lufan31.github.io/",
+    "name": "Fan Lu（卢帆）",
+    "description": "Personal academic homepage of Fan Lu, a Ph.D. candidate at the University of Science and Technology of China, focusing on embodied intelligence and VLA foundation models.",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://lufan31.github.io/#fan-lu",
+      "name": "Fan Lu",
+      "alternateName": "卢帆",
+      "image": "https://lufan31.github.io/assets/profile.jpg",
+      "email": [
+        "mailto:lufan@mail.ustc.edu.cn",
+        "mailto:lufanzwj@gmail.com"
+      ],
+      "jobTitle": "Ph.D. Candidate",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Science and Technology of China",
+        "sameAs": "https://www.ustc.edu.cn/"
+      },
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Robbyant（蚂蚁灵波科技）"
+        },
+        {
+          "@type": "Organization",
+          "name": "Ant Research"
+        }
+      ],
+      "knowsAbout": [
+        "Embodied Intelligence",
+        "Vision-Language-Action Models",
+        "Mixture-of-Experts",
+        "Multimodal Learning",
+        "Large-scale Pretraining",
+        "Out-of-Distribution Detection"
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=ILpxpfwAAAAJ&hl=zh-CN",
+        "https://github.com/LuFan31"
+      ]
+    },
+    "hasPart": [
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "From Foundation to Application: Improving VLA Models in Practice",
+        "datePublished": "2026",
+        "url": "https://arxiv.org/abs/2607.06403",
+        "author": {
+          "@id": "https://lufan31.github.io/#fan-lu"
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "A Pragmatic VLA Foundation Model",
+        "datePublished": "2026",
+        "url": "https://github.com/robbyant/lingbot-vla",
+        "author": {
+          "@id": "https://lufan31.github.io/#fan-lu"
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning",
+        "datePublished": "2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html",
+        "author": {
+          "@id": "https://lufan31.github.io/#fan-lu"
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection",
+        "datePublished": "2023",
+        "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html",
+        "author": {
+          "@id": "https://lufan31.github.io/#fan-lu"
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection",
+        "datePublished": "2023",
+        "url": "https://arxiv.org/abs/2312.01732",
+        "author": {
+          "@id": "https://lufan31.github.io/#fan-lu"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
-<body><div class="container">
-<div class="page">
-<header>
-<div>
-<h1>
-<b>Fan Lu</b>（卢帆）</h1>
-<p class="subtitle">Ph.D. Candidate</p>
-<p class="subtitle">University of Science and Technology of China</p>
-<div class="contact-lines"><div class="links">Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>   WeChat: luDZ310711</div><div class="links"><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a> <a href="https://github.com/LuFan31">GitHub</a></div></div>
+<body>
+<div class="site-shell">
+<aside class="sidebar">
+<div class="profile-card">
+<div class="profile-photo-frame">
+<img alt="Fan Lu" class="profile-photo" decoding="async" height="800" loading="eager" onerror="this.style.display='none';" src="assets/profile.jpg" width="800"/>
+<div aria-hidden="true" class="profile-photo-fallback">FL</div>
+</div><h1 class="profile-name">Fan Lu<span class="profile-cn">（卢帆）</span></h1>
+<p class="profile-role">Ph.D. Candidate</p>
+<p class="profile-affiliation">University of Science and Technology of China</p>
+<div class="profile-divider"></div>
+<div class="contact-stack">
+<div class="contact-row">
+<span class="contact-label">Email</span>
+<a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a><br/>
+<a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>
 </div>
-<nav aria-label="Page navigation">
+<div class="contact-row">
+<span class="contact-label">WeChat</span>
+            luDZ310711
+          </div>
+</div>
+<div class="profile-links">
+<a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a>
+<a href="https://github.com/LuFan31">GitHub</a>
+</div>
+</div>
+<nav aria-label="Page navigation" class="side-nav">
 <a href="#about">About</a>
 <a href="#current">Current Experience &amp; Interests</a>
-<a href="#project">Highlighted Projects</a>
-<a href="#featured-publications">Featured Publications</a>
-<a href="#selected-publications">Selected Publications</a>
+<a href="#project">Highlighted Projects</a><a href="#publications">Publications</a>
 <a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
 </nav>
-</header>
+</aside>
+<div class="main-column">
+<div class="content-panel">
 <main>
 <section id="about">
 <h2>About</h2>
+<div class="lead-copy">
 <p>I am a Ph.D. candidate at the University of Science and Technology of China, expected to graduate in June 2027. My research experience includes embodied intelligence, multimodal learning, and out-of-distribution detection. I am currently focusing on vision-language-action (VLA) foundation models for embodied intelligence.</p>
 <p>My current work involves large-scale VLA models for real-world robotic manipulation, including model architecture construction, training infrastructure, systematic ablations, large-scale pretraining, and MoE-based action expert design.</p>
+</div>
 </section>
-<section id="current"><h2>Current Experience &amp; Research Interests</h2><p><strong>2025.08 – Present:</strong> Applied Research Intern, Embodied AI, Robbyant（蚂蚁灵波科技）. Deeply involved in LingBot-VLA and LingBot-VLA 2.0, large-scale vision-language-action foundation models for real-world robotic manipulation.</p><p><strong>2023.09 – 2025.08:</strong> Research Intern, Ant Research. Worked on multimodal learning and deep learning research.</p><p>My broader research interests include embodied intelligence, multimodal learning, and large-scale pretraining.</p><div aria-label="Research interests" class="tags"><span class="tag">Embodied Intelligence</span>
+<section id="current">
+<h2>Current Experience &amp; Research Interests</h2>
+<div class="timeline">
+<div class="timeline-item">
+<span class="timeline-date">2025.08 – Present:</span>
+<p>Applied Research Intern, Embodied AI, Robbyant（蚂蚁灵波科技）. Deeply involved in LingBot-VLA and LingBot-VLA 2.0, large-scale vision-language-action foundation models for real-world robotic manipulation.</p>
+</div>
+<div class="timeline-item">
+<span class="timeline-date">2023.09 – 2025.08:</span>
+<p>Research Intern, Ant Research. Worked on multimodal learning and deep learning research.</p>
+</div>
+</div>
+<p>My broader research interests include embodied intelligence, multimodal learning, and large-scale pretraining.</p>
+<div aria-label="Research interests" class="tags">
+<span class="tag">Embodied Intelligence</span>
 <span class="tag">VLA Foundation Models</span>
 <span class="tag">Multimodal Learning</span>
 <span class="tag">Large-scale Pretraining</span>
-</div></section>
+</div>
+</section>
 <section id="project">
 <h2>Highlighted Projects</h2>
-<article class="project-highlight"><h3>LingBot-VLA 2.0: From Foundation to Application</h3><p class="role">Student first author.</p><p>LingBot-VLA 2.0 is a practical vision-language-action foundation model designed to move from large-scale pretraining toward reliable real-world robot applications. As a student first author, I focused on model architecture construction, codebase infrastructure design, and the implementation and optimization of an MoE-based action expert architecture.</p><p><a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a> <a href="https://arxiv.org/abs/2607.06403">Paper</a> <a href="https://github.com/robbyant/lingbot-vla-v2">Code</a></p></article>
+<div class="project-grid">
+<article class="project-highlight">
+<h3>LingBot-VLA 2.0: From Foundation to Application</h3>
+<p class="role">Student first author.</p>
+<p>LingBot-VLA 2.0 is a practical vision-language-action foundation model designed to move from large-scale pretraining toward reliable real-world robot applications. As a student first author, I focused on model architecture construction, codebase infrastructure design, and the implementation and optimization of an MoE-based action expert architecture.</p>
+<div class="link-buttons">
+<a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a>
+<a href="https://arxiv.org/abs/2607.06403">Paper</a>
+<a href="https://github.com/robbyant/lingbot-vla-v2">Code</a>
+</div>
+</article>
 <article class="project-highlight">
 <h3>LingBot-VLA: A Pragmatic VLA Foundation Model</h3>
 <p class="role">Co-first author; leading student contributor.</p>
 <p>LingBot-VLA is a large-scale vision-language-action foundation model for real-world robotic manipulation. I contributed as a co-first author and leading student contributor, focusing on model architecture construction, systematic ablations, codebase infrastructure design, and large-scale pretraining.</p>
-<p><a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></p>
+<div class="link-buttons">
+<a href="https://github.com/robbyant/lingbot-vla">Project / Code</a>
+</div>
 </article>
+</div>
 </section>
-<section id="featured-publications">
-<h2>Featured Publications</h2>
-<article class="publication"><div class="publication-title">LingBot-VLA 2.0: From Foundation to Application — Improving VLA Models in Practice</div><div class="authors">Wei Wu, Fangjing Wang, <strong>Fan Lu</strong>, He Sun, Shi Liu, Yunnan Wang, Yibin Yan, Yong Wang, Shuailei Ma, et al.</div><div class="venue">arXiv preprint arXiv:2607.06403, 2026</div><div class="muted">Student first author.</div><div class="paper-links"><a href="https://arxiv.org/abs/2607.06403">Paper</a>
-<a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a>
-<a href="https://github.com/robbyant/lingbot-vla-v2">Code</a></div><p class="summary">A practical VLA foundation model for real-world robot applications, with expanded cross-embodiment capabilities and an MoE-based action expert.</p></article>
+<section id="publications">
+<h2>Publications</h2>
+<div class="year-block">
+<div class="year-heading">2026</div>
+<div class="publication-list">
 <article class="publication">
+<div class="publication-image"><img alt="Main figure of LingBot-VLA 2.0" loading="lazy" src="assets/publications/lingbot_vla2.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">LingBot-VLA 2.0: From Foundation to Application — Improving VLA Models in Practice</div>
+<div class="authors">Wei Wu, Fangjing Wang, <strong>Fan Lu</strong>, He Sun, Shi Liu, Yunnan Wang, Yibin Yan, Yong Wang, Shuailei Ma, et al.</div>
+<div class="venue">arXiv preprint arXiv:2607.06403, 2026</div>
+<div class="muted">Student first author.</div>
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2607.06403">Paper</a>
+<a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a>
+<a href="https://github.com/robbyant/lingbot-vla-v2">Code</a>
+</div>
+<p class="summary">A practical VLA foundation model for real-world robot applications, with expanded cross-embodiment capabilities and an MoE-based action expert.</p>
+</div>
+</article>
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of A Pragmatic VLA Foundation Model" loading="lazy" src="assets/publications/lingbot_vla.webp"/></div>
+<div class="publication-body">
 <div class="publication-title">A Pragmatic VLA Foundation Model</div>
 <div class="authors">Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.</div>
 <div class="venue">arXiv preprint arXiv:2601.18692, 2026</div>
 <div class="muted">*Equal contribution. <strong>Fan Lu</strong> is a student first author.</div>
 <div class="paper-links"><a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></div>
 <p class="summary">A large-scale vision-language-action foundation model for real-world robotic manipulation.</p>
+</div>
 </article>
 <article class="publication">
+<div class="publication-image"><img alt="Main figure of Self-Consistent Latent Reasoning" loading="lazy" src="assets/publications/scolar.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">Self-Consistent Latent Reasoning: Long Latent Sequence Reasoning for Vision-Language Model</div>
+<div class="authors">Chenfeng Wang, Wei He, Xuhan Zhu, Chunpeng Zhou, Qizhen Li, Song Yan, Yufei Zheng, Chengjun Yu, <strong>Fan Lu</strong>, Wei Zhai, et al.</div>
+<div class="venue">arXiv preprint arXiv:2605.12163, 2026</div>
+</div>
+</article>
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of Diffusion Guided Chain-of-Vision" loading="lazy" src="assets/publications/diffusion_cov.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">Diffusion Guided Chain-of-Vision for Large Autoregressive Vision Models</div>
+<div class="authors">Xinyang Wang, Kecheng Zheng, Minfeng Zhu, Wei Wu, <strong>Fan Lu</strong>, Wei Zhai, Wei Chen</div>
+<div class="venue">CVPR, 2026</div>
+</div>
+</article>
+</div>
+</div>
+<div class="year-block">
+<div class="year-heading">2025</div>
+<div class="publication-list">
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of CompreCap" loading="lazy" src="assets/publications/comprecap.webp"/></div>
+<div class="publication-body">
 <div class="publication-title">Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning</div>
 <div class="authors"><strong>Fan Lu</strong>, Wei Wu, Kecheng Zheng, Shuailei Ma, Biao Gong, Jiawei Liu, Wei Zhai, Yang Cao, Yujun Shen, Zheng-Jun Zha</div>
 <div class="venue">CVPR, 2025</div>
@@ -440,57 +1137,157 @@ a:hover {
 <a href="https://huggingface.co/datasets/FanLu31/CompreCap">Dataset</a>
 </div>
 <p class="summary">A benchmark for evaluating comprehensive image captioning in large vision-language models using directed scene graphs.</p>
+</div>
 </article>
 <article class="publication">
+<div class="publication-image"><img alt="Main figure of Learning Visual Generative Priors without Text" loading="lazy" src="assets/publications/lumos.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">Learning Visual Generative Priors without Text</div>
+<div class="authors">Shuailei Ma, Kecheng Zheng, Ying Wei, Wei Wu, <strong>Fan Lu</strong>, Yifei Zhang, Chen-Wei Xie, Biao Gong, Jiapeng Zhu, Yujun Shen</div>
+<div class="venue">CVPR, 2025</div>
+<div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Ma_Learning_Visual_Generative_Priors_without_Text_CVPR_2025_paper.html">Paper</a></div>
+</div>
+</article>
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of Vision-Centric Activation and Coordination" loading="lazy" src="assets/publications/vaco.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">Vision-Centric Activation and Coordination for Multimodal Large Language Models</div>
+<div class="authors">Yunnan Wang, <strong>Fan Lu</strong>, Kecheng Zheng, Ziyuan Huang, Ziqiang Li, Wenjun Zeng, Xin Jin</div>
+<div class="venue">arXiv preprint arXiv:2510.14349, 2025</div>
+<div class="paper-links"><a href="https://arxiv.org/abs/2510.14349">Paper</a></div>
+</div>
+</article>
+</div>
+</div>
+<div class="year-block">
+<div class="year-heading">2024</div>
+<div class="publication-list">
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of LoTLIP" loading="lazy" src="assets/publications/lotlip.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">LoTLIP: Improving Language-Image Pre-training for Long Text Understanding</div>
+<div class="authors">Wei Wu, Kecheng Zheng, Shuailei Ma, <strong>Fan Lu</strong>, Yuxin Guo, Yifei Zhang, Wei Chen, Qingpei Guo, Yujun Shen, Zheng-Jun Zha</div>
+<div class="venue">NeurIPS, 2024</div>
+<div class="paper-links"><a href="https://arxiv.org/abs/2410.05249">Paper</a></div>
+</div>
+</article>
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of DreamLIP" loading="lazy" src="assets/publications/dreamlip.webp"/></div>
+<div class="publication-body">
+<div class="publication-title">DreamLIP: Language-Image Pre-training with Long Captions</div>
+<div class="authors">Kecheng Zheng, Yifei Zhang, Wei Wu, <strong>Fan Lu</strong>, Shuailei Ma, Xin Jin, Wei Chen, Yujun Shen</div>
+<div class="venue">ECCV, 2024</div>
+</div>
+</article>
+</div>
+</div>
+<div class="year-block">
+<div class="year-heading">2023</div>
+<div class="publication-list">
+<article class="publication">
+<div class="publication-image"><img alt="Main figure of Uncertainty-Aware Optimal Transport" loading="lazy" src="assets/publications/uaot.webp"/></div>
+<div class="publication-body">
 <div class="publication-title">Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection</div>
 <div class="authors"><strong>Fan Lu</strong>, Kai Zhu, Wei Zhai, Kecheng Zheng, Yang Cao</div>
 <div class="venue">CVPR, 2023</div>
-<div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html">Paper</a>
-<a href="https://github.com/LuFan31/ET-OOD">Code</a></div>
+<div class="paper-links">
+<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html">Paper</a>
+<a href="https://github.com/LuFan31/ET-OOD">Code</a>
+</div>
 <p class="summary">An uncertainty-aware optimal transport framework for semantically coherent out-of-distribution detection.</p>
+</div>
 </article>
 <article class="publication">
+<div class="publication-image"><img alt="Main figure of Likelihood-Aware Semantic Alignment" loading="lazy" src="assets/publications/lsa.webp"/></div>
+<div class="publication-body">
 <div class="publication-title">Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection</div>
 <div class="authors"><strong>Fan Lu</strong>, Kai Zhu, Kecheng Zheng, Wei Zhai, Yang Cao</div>
 <div class="venue">arXiv preprint arXiv:2312.01732, 2023</div>
-<div class="paper-links"><a href="https://arxiv.org/abs/2312.01732">Paper</a>
-<a href="https://github.com/LuFan31/LSA">Code</a></div>
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2312.01732">Paper</a>
+<a href="https://github.com/LuFan31/LSA">Code</a>
+</div>
 <p class="summary">A semantic alignment approach for full-spectrum out-of-distribution detection under both semantic and covariate shifts.</p>
+</div>
 </article>
-</section>
-<section id="selected-publications">
-<h2>Selected Publications</h2>
-<div class="year-heading">2026</div>
-<ul class="compact-list"><li><strong>LingBot-VLA 2.0: From Foundation to Application — Improving VLA Models in Practice.</strong><br/>Wei Wu, Fangjing Wang, <strong>Fan Lu</strong>, He Sun, Shi Liu, Yunnan Wang, Yibin Yan, Yong Wang, Shuailei Ma, et al. arXiv preprint arXiv:2607.06403, 2026. <a href="https://arxiv.org/abs/2607.06403">Paper</a> <a href="https://technology.robbyant.com/lingbot-vla-v2">Project Page</a> <a href="https://github.com/robbyant/lingbot-vla-v2">Code</a></li><li><strong>A Pragmatic VLA Foundation Model.</strong><br/>Wei Wu*, <strong>Fan Lu</strong>*, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, Shuailei Ma, et al.. arXiv preprint arXiv:2601.18692, 2026. <a href="https://github.com/robbyant/lingbot-vla">Project / Code</a></li><li><strong>Self-Consistent Latent Reasoning: Long Latent Sequence Reasoning for Vision-Language Model.</strong><br/>Chenfeng Wang, Wei He, Xuhan Zhu, Chunpeng Zhou, Qizhen Li, Song Yan, Yufei Zheng, Chengjun Yu, <strong>Fan Lu</strong>, Wei Zhai, et al.. arXiv preprint arXiv:2605.12163, 2026. </li><li><strong>Diffusion Guided Chain-of-Vision for Large Autoregressive Vision Models.</strong><br/>Xinyang Wang, Kecheng Zheng, Minfeng Zhu, Wei Wu, <strong>Fan Lu</strong>, Wei Zhai, Wei Chen. CVPR, 2026. </li></ul>
-<div class="year-heading">2025</div>
-<ul class="compact-list"><li><strong>Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning.</strong><br/><strong>Fan Lu</strong>, Wei Wu, Kecheng Zheng, Shuailei Ma, Biao Gong, Jiawei Liu, Wei Zhai, Yang Cao, Yujun Shen, Zheng-Jun Zha. CVPR, 2025. <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Benchmarking_Large_Vision-Language_Models_via_Directed_Scene_Graph_for_Comprehensive_CVPR_2025_paper.html">Paper</a> <a href="https://github.com/LuFan31/CompreCap">Code</a> <a href="https://huggingface.co/datasets/FanLu31/CompreCap">Dataset</a></li><li><strong>Learning Visual Generative Priors without Text.</strong><br/>Shuailei Ma, Kecheng Zheng, Ying Wei, Wei Wu, <strong>Fan Lu</strong>, Yifei Zhang, Chen-Wei Xie, Biao Gong, Jiapeng Zhu, Yujun Shen. CVPR, 2025. <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Ma_Learning_Visual_Generative_Priors_without_Text_CVPR_2025_paper.html">Paper</a></li><li><strong>Vision-Centric Activation and Coordination for Multimodal Large Language Models.</strong><br/>Yunnan Wang, <strong>Fan Lu</strong>, Kecheng Zheng, Ziyuan Huang, Ziqiang Li, Wenjun Zeng, Xin Jin. arXiv preprint arXiv:2510.14349, 2025. <a href="https://arxiv.org/abs/2510.14349">Paper</a></li></ul>
-<div class="year-heading">2024</div>
-<ul class="compact-list"><li><strong>LoTLIP: Improving Language-Image Pre-training for Long Text Understanding.</strong><br/>Wei Wu, Kecheng Zheng, Shuailei Ma, <strong>Fan Lu</strong>, Yuxin Guo, Yifei Zhang, Wei Chen, Qingpei Guo, Yujun Shen, Zheng-Jun Zha. NeurIPS, 2024. <a href="https://arxiv.org/abs/2410.05249">Paper</a></li><li><strong>DreamLIP: Language-Image Pre-training with Long Captions.</strong><br/>Kecheng Zheng, Yifei Zhang, Wei Wu, <strong>Fan Lu</strong>, Shuailei Ma, Xin Jin, Wei Chen, Yujun Shen. ECCV, 2024. </li></ul>
-<div class="year-heading">2023</div>
-<ul class="compact-list"><li><strong>Uncertainty-Aware Optimal Transport for Semantically Coherent Out-of-Distribution Detection.</strong><br/><strong>Fan Lu</strong>, Kai Zhu, Wei Zhai, Kecheng Zheng, Yang Cao. CVPR, 2023. <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lu_Uncertainty-Aware_Optimal_Transport_for_Semantically_Coherent_Out-of-Distribution_Detection_CVPR_2023_paper.html">Paper</a> <a href="https://github.com/LuFan31/ET-OOD">Code</a></li><li><strong>Likelihood-Aware Semantic Alignment for Full-Spectrum Out-of-Distribution Detection.</strong><br/><strong>Fan Lu</strong>, Kai Zhu, Kecheng Zheng, Wei Zhai, Yang Cao. arXiv preprint arXiv:2312.01732, 2023. <a href="https://arxiv.org/abs/2312.01732">Paper</a> <a href="https://github.com/LuFan31/LSA">Code</a></li></ul>
+</div>
+</div>
 </section>
 <section id="experience">
 <h2>Experience</h2>
+<div class="experience-list">
 <div class="experience-item">
+<div>
 <div class="experience-title">Robbyant（蚂蚁灵波科技）</div>
 <div class="experience-meta">Applied Research Intern, Embodied AI · 2025.08 – Present</div>
+</div>
 <p>Working on LingBot-VLA and LingBot-VLA 2.0, large-scale vision-language-action foundation models for real-world robotic manipulation. My contributions include model architecture construction, codebase infrastructure design, large-scale pretraining, and the implementation and optimization of an MoE-based action expert architecture for LingBot-VLA 2.0.</p>
 </div>
 <div class="experience-item">
+<div>
 <div class="experience-title">Ant Research</div>
 <div class="experience-meta">Research Intern · 2023.09 – 2025.08</div>
+</div>
 <p>Worked on multimodal learning and deep learning research.</p>
 </div>
 <div class="experience-item">
+<div>
 <div class="experience-title">University of Science and Technology of China</div>
-<div class="experience-meta">Ph.D. Candidate · Expected Jun. 2027</div>
+<div class="experience-meta">Ph.D. Candidate · 2022.09 – Expected Jun. 2027</div>
+</div>
+<div></div>
+</div>
 </div>
 </section>
-<section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>    WeChat: luDZ310711</p><p><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a> <a href="https://github.com/LuFan31">GitHub</a></p></section>
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact-panel">
+<p>Email: <a href="mailto:lufan@mail.ustc.edu.cn">lufan@mail.ustc.edu.cn</a> / <a href="mailto:lufanzwj@gmail.com">lufanzwj@gmail.com</a>    WeChat: luDZ310711</p>
+<p><a href="https://scholar.google.com/citations?user=ILpxpfwAAAAJ&amp;hl=zh-CN">Google Scholar</a>   <a href="https://github.com/LuFan31">GitHub</a></p>
+</div>
+</section>
 </main>
 <footer>
 <p>© 2026 <b>Fan Lu</b>. Last updated: July 2026.</p>
 </footer>
 </div>
-</div></body>
+</div>
+</div>
+<script>
+    (function () {
+      const navLinks = Array.from(document.querySelectorAll(".side-nav a"));
+      const sections = navLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+
+      if (!("IntersectionObserver" in window) || sections.length === 0) {
+        return;
+      }
+
+      const setActive = (id) => {
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+        });
+      };
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          if (visible.length) {
+            setActive(visible[0].target.id);
+          }
+        },
+        {
+          rootMargin: "-20% 0px -68% 0px",
+          threshold: [0.01, 0.15, 0.35]
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+      setActive(sections[0].id);
+    })();
+  </script>
+</body>
 </html>
